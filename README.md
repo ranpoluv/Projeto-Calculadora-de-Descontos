@@ -39,7 +39,6 @@ calculadora-de-descontos/
 - `app.py`: Arquivo principal da aplicação Flask.
 - `templates/index.html`: Arquivo HTML com a interface da calculadora.
 - `static/css/style.css`: Arquivo CSS para estilização da página.
-- `requirements.txt`: Arquivo com as dependências do projeto.
 - `README.md`: Documento explicativo do projeto.
 
 ## Autor
