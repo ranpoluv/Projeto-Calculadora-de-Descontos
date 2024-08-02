@@ -31,9 +31,7 @@ calculadora-de-descontos/
 │   └── index.html
 │
 ├── app.py
-├── requirements.txt
-├── README.md
-└── venv/
+└── README.md
 ```
 
 - `app.py`: Arquivo principal da aplicação Flask.
