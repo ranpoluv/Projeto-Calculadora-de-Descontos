@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descontos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Descontos</h1>
+    </header>
+    <main>
+        <form method="post">
+            <label for="original_price">Preço Original (R$):</label>
+            <input type="number" id="original_price" name="original_price" step="0.01" required>
+            
+            <label for="discount_percentage">Percentual de Desconto (%):</label>
+            <input type="number" id="discount_percentage" name="discount_percentage" step="0.01" required>
+            
+            <button type="submit">Calcular</button>
+        </form>
+
+        {% if discount_amount is not none %}
+            <div class="results">
+                <p>Valor do Desconto: R$ {{ discount_amount if discount_amount is not string else discount_amount }}</p>
+                <p>Preço Final: R$ {{ final_price if final_price is not none else '' }}</p>
+            </div>
+        {% endif %}
+    </main>
+</body>
+</html>
