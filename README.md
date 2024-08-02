@@ -23,14 +23,17 @@
 ```
 calculadora-de-descontos/
 │
+├── imagens
+│   └── projeto.JPG
+│   └── resultado.JPG
+│
 ├── static/
-│   ├── css/
-│   │   └── style.css
+│   └── style.css
 │
 ├── templates/
 │   └── index.html
 │
-├── app.py
+├── main.py
 └── README.md
 ```
 
